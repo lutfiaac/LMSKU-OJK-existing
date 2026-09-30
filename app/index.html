@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Prototipe frontend LMSKU berdasarkan referensi tampilan dan alur pembelajaran." />
+    <link rel="icon" href="/assets/lms-logo.png" />
+    <title>LMSKU — Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if (location.protocol === 'file:') {
+        document.getElementById('root').innerHTML = '<main style="font-family:Arial,sans-serif;max-width:640px;margin:80px auto;padding:24px;line-height:1.7"><h1>Buka preview LMSKU</h1><p>Klik dua kali <strong>Buka-LMSKU.cmd</strong> di folder utama proyek. Launcher akan menjalankan frontend dan membuka browser.</p><p>Jika preview sudah aktif, <a href="http://127.0.0.1:4173/Dashboard">buka LMSKU di sini</a>.</p></main>';
+      }
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
